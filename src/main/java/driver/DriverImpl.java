@@ -5,9 +5,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverImpl implements Driver {
     public static WebDriver driver;
+
     @Override
-    public WebDriver driverInit() {
-        return driver = new ChromeDriver();
+    public void driverInit() {
+        System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
+        this.driver = new ChromeDriver();
     }
 
     @Override
