@@ -9,7 +9,7 @@ public class Util {
 
     public static Properties loadPropertiesFile(String fileName) throws IOException {
         Properties obj = new Properties();
-        FileInputStream objfile = new FileInputStream(System.getProperty("user.dir")+"/objectRepo" + fileName);
+        FileInputStream objfile = new FileInputStream(System.getProperty("user.dir") + "/" + fileName);
         obj.load(objfile);
         return obj;
     }

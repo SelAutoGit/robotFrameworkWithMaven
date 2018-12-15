@@ -1,6 +1,7 @@
 package wrapper;
 
-import driver.DriverImpl;
+import driver.ChromeDriverImpl;
+import objectRepo.ObjectProcessor;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
@@ -16,34 +17,50 @@ public class ActionsImpl implements Actions {
     private final int timeOutInSeconds = 30;
 
     @Override
-    public void click(String xpath) {
+    public void click(String elementName) {
         try{
-             (new WebDriverWait(DriverImpl.driver, timeOutInSeconds))
-                    .until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+            logger.info("Trying to click element " + elementName + " with xpath " +ObjectProcessor.object.getProperty(elementName));
+             (new WebDriverWait(ChromeDriverImpl.driver, timeOutInSeconds))
+                    .until(ExpectedConditions.elementToBeClickable(By.xpath(ObjectProcessor.object.getProperty(elementName)))).click();
 
         }catch (Exception e){
             logger.error("The element can't be found bc of " + e.getMessage());
-            WebDriver augmentedDriver = new Augmenter().augment(DriverImpl.driver);
+            WebDriver augmentedDriver = new Augmenter().augment(ChromeDriverImpl.driver);
             File screenshot = ((TakesScreenshot)augmentedDriver).
                     getScreenshotAs(OutputType.FILE);
 
         }
     }
 
+
+
     @Override
-    public WebElement findElement(String xpath) {
+    public void simpleClick(String elementName){
+        logger.info("Trying to click element " + elementName + " with xpath " +ObjectProcessor.object.getProperty(elementName));
+
+    }
+
+    @Override
+    public WebElement findElement(String elementName) {
         try{
-            WebElement element = (new WebDriverWait(DriverImpl.driver, timeOutInSeconds))
-                    .until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
+            logger.info("Trying to locate element " + elementName + " with xpath " +ObjectProcessor.object.getProperty(elementName));
+            WebElement element = (new WebDriverWait(ChromeDriverImpl.driver, timeOutInSeconds))
+                    .until(ExpectedConditions.presenceOfElementLocated(By.xpath(ObjectProcessor.object.getProperty(elementName))));
             return element;
         }catch (Exception e){
             logger.error("The element can't be found bc of " + e.getMessage());
-            WebDriver augmentedDriver = new Augmenter().augment(DriverImpl.driver);
+            WebDriver augmentedDriver = new Augmenter().augment(ChromeDriverImpl.driver);
             File screenshot = ((TakesScreenshot)augmentedDriver).
                     getScreenshotAs(OutputType.FILE);
             return null;
         }
 
+    }
+
+    public void moveToElement(String elementName){
+        org.openqa.selenium.interactions.Actions actions = new org.openqa.selenium.interactions.Actions(ChromeDriverImpl.driver);
+        WebElement targetElement = findElement(elementName);
+        actions.moveToElement(targetElement).moveToElement(targetElement).build().perform();
     }
 
     @Override

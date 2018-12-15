@@ -3,7 +3,7 @@ package driver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class DriverImpl implements Driver {
+public class ChromeDriverImpl implements Driver {
     public static WebDriver driver;
 
     @Override
@@ -15,5 +15,10 @@ public class DriverImpl implements Driver {
     @Override
     public WebDriver driverInit(String driverType) {
         return null;
+    }
+
+    @Override
+    public void driverTerminate(){
+        this.driver.close();
     }
 }

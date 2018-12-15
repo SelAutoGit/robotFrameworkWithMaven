@@ -21,8 +21,8 @@
         <robotframework.version>3.0</robotframework.version>
         <xmlUnit.version>2.6.0</xmlUnit.version>
         <selenium.version>3.141.59</selenium.version>
-        <workingDir>${project.basedir}/RiskAPIAutomationCore</workingDir>
-        <testCasesDirectory>${project.basedir}/testcase/run</testCasesDirectory>
+        <workingDir>${project.basedir}</workingDir>
+        <testCasesDirectory>${project.basedir}/testcases/run</testCasesDirectory>
     </properties>
 
     <dependencies>
@@ -110,13 +110,20 @@
             <artifactId>log4j-core</artifactId>
             <version>${log4j.version}</version>
         </dependency>
-        <!--            <dependency>
+                    <dependency>
                         <groupId>org.apache.logging.log4j</groupId>
                         <artifactId>log4j-core</artifactId>
                         <version>${log4j.version}</version>
                         <type>test-jar</type>
                         <scope>test</scope>
-                    </dependency>-->
+                    </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>

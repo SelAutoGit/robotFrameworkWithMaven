@@ -9,14 +9,14 @@ import java.util.Properties;
 
 public class ObjectProcessor {
     private static final Logger logger = LogManager.getLogger(ObjectProcessor.class);
-    private static Properties object=null;
+    public static Properties object;
 
     public ObjectProcessor(){};
     public ObjectProcessor(String objectRepoName){
         try {
-            object = Util.loadPropertiesFile(objectRepoName);
+            this.object = Util.loadPropertiesFile(objectRepoName);
         } catch (IOException e) {
-            logger.info("There is prob to load properties file " +e.getMessage());
+            logger.error("There is prob to load properties file plz check if properties file availalbe " +e.getMessage());
         }
     }
 
@@ -27,4 +27,6 @@ public class ObjectProcessor {
     public void setElementLocator(String elementName, String xpathValue){
         object.setProperty(elementName,xpathValue) ;
     }
+
+
 }

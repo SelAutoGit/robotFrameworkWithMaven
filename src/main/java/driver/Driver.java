@@ -6,4 +6,5 @@ public interface Driver {
 
     public  void driverInit();
     public  WebDriver driverInit(String driverType);
+    public void driverTerminate();
 }
