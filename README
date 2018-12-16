@@ -59,6 +59,8 @@ To-Do (bc of tight deadline, there are lots of features still not available and 
     3. More interfaces and classes - WebTable, Frame, etc. are commonly used for web applications, the framework should have classes to handles them effectively
     4. Standalone execution package - Standalone package should be well packaged with all conf, repo, bin, this will help for CI/CD pipelines
     5. Assembly plug in - Assemply descriptor is under developing, it has to be set up for standalone package
+    6. Integration with Test management - depends on what test manangent tools in use, normally all of them provide REST API to handle them
+    7. Databases - Data bases is widely using for any application
 
 Futures re-search:
     How does Selenium hub to handle and distribute 3rd party dependencies
