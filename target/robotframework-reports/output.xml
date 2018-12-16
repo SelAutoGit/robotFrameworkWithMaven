@@ -1,295 +1,295 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_05)" generated="20181216 14:51:10.078">
+<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_05)" generated="20181216 16:38:23.363">
 <suite source="C:\Users\Yuting\workspace\demo\testcases\run" name="Run" id="s1">
 <suite source="C:\Users\Yuting\workspace\demo\testcases\run\demo.robot" name="Demo" id="s1-s1">
 <test name="ORDER MAGIC MOUSE" id="s1-s1-t1">
 <kw library="keywords.RobotGUIKeywords" name="Init">
-<msg level="INFO" timestamp="20181216 14:51:15.839">Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 45795
+<msg level="INFO" timestamp="20181216 16:38:29.276">Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 35420
 Only local connections are allowed.
-Dec 16, 2018 2:51:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Dec 16, 2018 4:38:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS</msg>
-<status endtime="20181216 14:51:15.846" starttime="20181216 14:51:11.660" status="PASS"></status>
+<status endtime="20181216 16:38:29.282" starttime="20181216 16:38:24.845" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Open">
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<status endtime="20181216 14:51:19.340" starttime="20181216 14:51:15.850" status="PASS"></status>
+<status endtime="20181216 16:38:33.177" starttime="20181216 16:38:29.285" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Find">
 <arguments>
 <arg>HomePage.ProductCategory</arg>
 </arguments>
-<status endtime="20181216 14:51:19.428" starttime="20181216 14:51:19.344" status="PASS"></status>
+<status endtime="20181216 16:38:33.250" starttime="20181216 16:38:33.179" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Move To Element">
 <arguments>
 <arg>HomePage.ProductCategory</arg>
 </arguments>
-<status endtime="20181216 14:51:19.569" starttime="20181216 14:51:19.430" status="PASS"></status>
+<status endtime="20181216 16:38:33.391" starttime="20181216 16:38:33.253" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Click">
 <arguments>
 <arg>ProductCategory.Accessories</arg>
 </arguments>
-<status endtime="20181216 14:51:24.237" starttime="20181216 14:51:19.572" status="PASS"></status>
+<status endtime="20181216 16:38:36.624" starttime="20181216 16:38:33.395" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Click">
 <arguments>
 <arg>Accessories.Button.AddtoCart</arg>
 </arguments>
-<status endtime="20181216 14:51:24.412" starttime="20181216 14:51:24.239" status="PASS"></status>
+<status endtime="20181216 16:38:36.778" starttime="20181216 16:38:36.627" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Click">
 <arguments>
 <arg>Accessories.Link.Checkout</arg>
 </arguments>
-<status endtime="20181216 14:51:29.706" starttime="20181216 14:51:24.416" status="PASS"></status>
+<status endtime="20181216 16:38:39.586" starttime="20181216 16:38:36.780" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Click">
 <arguments>
 <arg>Checkout.Link.Continue</arg>
 </arguments>
-<status endtime="20181216 14:51:29.893" starttime="20181216 14:51:29.709" status="PASS"></status>
+<status endtime="20181216 16:38:39.796" starttime="20181216 16:38:39.592" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Type In">
 <arguments>
 <arg>Checkout.Fianl.Email</arg>
 <arg>joe@gmail.com</arg>
 </arguments>
-<status endtime="20181216 14:51:30.901" starttime="20181216 14:51:29.898" status="PASS"></status>
+<status endtime="20181216 16:38:40.825" starttime="20181216 16:38:39.799" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Type In">
 <arguments>
 <arg>Checkout.Final.FirstName</arg>
 <arg>John</arg>
 </arguments>
-<status endtime="20181216 14:51:31.166" starttime="20181216 14:51:30.903" status="PASS"></status>
+<status endtime="20181216 16:38:41.106" starttime="20181216 16:38:40.827" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Type In">
 <arguments>
 <arg>Checkout.Final.LastName</arg>
 <arg>Doe</arg>
 </arguments>
-<status endtime="20181216 14:51:31.420" starttime="20181216 14:51:31.170" status="PASS"></status>
+<status endtime="20181216 16:38:41.359" starttime="20181216 16:38:41.108" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Type In">
 <arguments>
 <arg>Checkout.Final.Address</arg>
 <arg>1 main street</arg>
 </arguments>
-<status endtime="20181216 14:51:31.683" starttime="20181216 14:51:31.422" status="PASS"></status>
+<status endtime="20181216 16:38:41.589" starttime="20181216 16:38:41.361" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Type In">
 <arguments>
 <arg>Checkout.Final.City</arg>
 <arg>Toronto</arg>
 </arguments>
-<status endtime="20181216 14:51:31.921" starttime="20181216 14:51:31.685" status="PASS"></status>
+<status endtime="20181216 16:38:41.829" starttime="20181216 16:38:41.591" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Select">
 <arguments>
 <arg>Checkout.Final.Country</arg>
 <arg>Canada</arg>
 </arguments>
-<status endtime="20181216 14:51:32.077" starttime="20181216 14:51:31.924" status="PASS"></status>
+<status endtime="20181216 16:38:41.987" starttime="20181216 16:38:41.831" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Type In">
 <arguments>
 <arg>Checkout.Final.PostCode</arg>
 <arg>m1m1m1</arg>
 </arguments>
-<status endtime="20181216 14:51:32.304" starttime="20181216 14:51:32.079" status="PASS"></status>
+<status endtime="20181216 16:38:42.228" starttime="20181216 16:38:41.990" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Type In">
 <arguments>
 <arg>Checkout.Final.Phone</arg>
 <arg>1234567890</arg>
 </arguments>
-<status endtime="20181216 14:51:32.587" starttime="20181216 14:51:32.306" status="PASS"></status>
+<status endtime="20181216 16:38:42.542" starttime="20181216 16:38:42.230" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Click">
 <arguments>
 <arg>Checkout.Final.SameAs</arg>
 </arguments>
-<status endtime="20181216 14:51:32.735" starttime="20181216 14:51:32.590" status="PASS"></status>
+<status endtime="20181216 16:38:42.681" starttime="20181216 16:38:42.545" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Click">
 <arguments>
 <arg>Checkout.Final.Purchase</arg>
 </arguments>
-<status endtime="20181216 14:51:43.387" starttime="20181216 14:51:32.737" status="PASS"></status>
+<status endtime="20181216 16:38:53.363" starttime="20181216 16:38:42.683" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Validate Element Presence">
 <arguments>
 <arg>TransactionResults.Title</arg>
 </arguments>
-<status endtime="20181216 14:51:53.405" starttime="20181216 14:51:43.389" status="PASS"></status>
+<status endtime="20181216 16:38:53.400" starttime="20181216 16:38:53.365" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Validate Element Text">
 <arguments>
 <arg>TransactionResults.Title</arg>
 <arg>Transaction Results</arg>
 </arguments>
-<status endtime="20181216 14:51:53.448" starttime="20181216 14:51:53.408" status="PASS"></status>
+<status endtime="20181216 16:38:53.442" starttime="20181216 16:38:53.402" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Validate Element Text">
 <arguments>
 <arg>TransactionResults.Name</arg>
 <arg>Magic Mouse</arg>
 </arguments>
-<status endtime="20181216 14:51:53.496" starttime="20181216 14:51:53.449" status="PASS"></status>
+<status endtime="20181216 16:38:53.490" starttime="20181216 16:38:53.443" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Validate Element Text">
 <arguments>
 <arg>TransactionResults.Price</arg>
 <arg>$150.00</arg>
 </arguments>
-<status endtime="20181216 14:51:53.545" starttime="20181216 14:51:53.498" status="PASS"></status>
+<status endtime="20181216 16:38:53.541" starttime="20181216 16:38:53.491" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Validate Element Text">
 <arguments>
 <arg>TransactionResults.Quantity</arg>
 <arg>1</arg>
 </arguments>
-<status endtime="20181216 14:51:53.591" starttime="20181216 14:51:53.547" status="PASS"></status>
+<status endtime="20181216 16:38:53.589" starttime="20181216 16:38:53.543" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Validate Element Text">
 <arguments>
 <arg>TransactionResults.ItemTotal</arg>
 <arg>$150.00</arg>
 </arguments>
-<status endtime="20181216 14:51:53.673" starttime="20181216 14:51:53.593" status="PASS"></status>
+<status endtime="20181216 16:38:53.660" starttime="20181216 16:38:53.591" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Close">
-<status endtime="20181216 14:51:53.778" starttime="20181216 14:51:53.676" status="PASS"></status>
+<status endtime="20181216 16:38:53.768" starttime="20181216 16:38:53.663" status="PASS"></status>
 </kw>
 <doc>Demo test to order a magic mouse work flow</doc>
-<status critical="yes" endtime="20181216 14:51:53.784" starttime="20181216 14:51:11.649" status="PASS"></status>
+<status critical="yes" endtime="20181216 16:38:53.774" starttime="20181216 16:38:24.832" status="PASS"></status>
 </test>
 <test name="ORDER MAGIC MOUSE Negative Test case" id="s1-s1-t2">
 <kw library="keywords.RobotGUIKeywords" name="Init">
-<msg level="INFO" timestamp="20181216 14:51:56.783">Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 4503
+<msg level="INFO" timestamp="20181216 16:38:56.726">Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 17672
 Only local connections are allowed.</msg>
-<status endtime="20181216 14:51:56.786" starttime="20181216 14:51:53.807" status="PASS"></status>
+<status endtime="20181216 16:38:56.730" starttime="20181216 16:38:53.812" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Open">
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<status endtime="20181216 14:52:00.654" starttime="20181216 14:51:56.787" status="PASS"></status>
+<status endtime="20181216 16:39:00.626" starttime="20181216 16:38:56.731" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Find">
 <arguments>
 <arg>HomePage.ProductCategory</arg>
 </arguments>
-<status endtime="20181216 14:52:00.687" starttime="20181216 14:52:00.657" status="PASS"></status>
+<status endtime="20181216 16:39:00.657" starttime="20181216 16:39:00.628" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Move To Element">
 <arguments>
 <arg>HomePage.ProductCategory</arg>
 </arguments>
-<status endtime="20181216 14:52:00.794" starttime="20181216 14:52:00.689" status="PASS"></status>
+<status endtime="20181216 16:39:00.743" starttime="20181216 16:39:00.658" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Click">
 <arguments>
 <arg>ProductCategory.Accessories</arg>
 </arguments>
-<status endtime="20181216 14:52:08.144" starttime="20181216 14:52:00.796" status="PASS"></status>
+<status endtime="20181216 16:39:04.282" starttime="20181216 16:39:00.744" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Click">
 <arguments>
 <arg>Accessories.Button.AddtoCart</arg>
 </arguments>
-<status endtime="20181216 14:52:08.323" starttime="20181216 14:52:08.147" status="PASS"></status>
+<status endtime="20181216 16:39:04.430" starttime="20181216 16:39:04.285" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Click">
 <arguments>
 <arg>Accessories.Link.Checkout</arg>
 </arguments>
-<status endtime="20181216 14:52:13.011" starttime="20181216 14:52:08.327" status="PASS"></status>
+<status endtime="20181216 16:39:07.719" starttime="20181216 16:39:04.434" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Click">
 <arguments>
 <arg>Checkout.Link.Continue</arg>
 </arguments>
-<status endtime="20181216 14:52:13.178" starttime="20181216 14:52:13.013" status="PASS"></status>
+<status endtime="20181216 16:39:07.982" starttime="20181216 16:39:07.722" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Type In">
 <arguments>
 <arg>Checkout.Final.FirstName</arg>
 <arg>John</arg>
 </arguments>
-<status endtime="20181216 14:52:14.063" starttime="20181216 14:52:13.180" status="PASS"></status>
+<status endtime="20181216 16:39:08.876" starttime="20181216 16:39:07.984" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Type In">
 <arguments>
 <arg>Checkout.Final.LastName</arg>
 <arg>Doe</arg>
 </arguments>
-<status endtime="20181216 14:52:14.320" starttime="20181216 14:52:14.066" status="PASS"></status>
+<status endtime="20181216 16:39:09.136" starttime="20181216 16:39:08.878" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Type In">
 <arguments>
 <arg>Checkout.Final.Address</arg>
 <arg>1 main street</arg>
 </arguments>
-<status endtime="20181216 14:52:14.589" starttime="20181216 14:52:14.322" status="PASS"></status>
+<status endtime="20181216 16:39:09.413" starttime="20181216 16:39:09.138" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Type In">
 <arguments>
 <arg>Checkout.Final.City</arg>
 <arg>Toronto</arg>
 </arguments>
-<status endtime="20181216 14:52:14.834" starttime="20181216 14:52:14.590" status="PASS"></status>
+<status endtime="20181216 16:39:09.651" starttime="20181216 16:39:09.415" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Select">
 <arguments>
 <arg>Checkout.Final.Country</arg>
 <arg>Canada</arg>
 </arguments>
-<status endtime="20181216 14:52:14.973" starttime="20181216 14:52:14.836" status="PASS"></status>
+<status endtime="20181216 16:39:09.787" starttime="20181216 16:39:09.653" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Type In">
 <arguments>
 <arg>Checkout.Final.PostCode</arg>
 <arg>m1m1m1</arg>
 </arguments>
-<status endtime="20181216 14:52:15.204" starttime="20181216 14:52:14.976" status="PASS"></status>
+<status endtime="20181216 16:39:10.009" starttime="20181216 16:39:09.789" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Type In">
 <arguments>
 <arg>Checkout.Final.Phone</arg>
 <arg>1234567890</arg>
 </arguments>
-<status endtime="20181216 14:52:15.455" starttime="20181216 14:52:15.205" status="PASS"></status>
+<status endtime="20181216 16:39:10.324" starttime="20181216 16:39:10.011" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Click">
 <arguments>
 <arg>Checkout.Final.SameAs</arg>
 </arguments>
-<status endtime="20181216 14:52:15.592" starttime="20181216 14:52:15.456" status="PASS"></status>
+<status endtime="20181216 16:39:10.473" starttime="20181216 16:39:10.326" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Click">
 <arguments>
 <arg>Checkout.Final.Purchase</arg>
 </arguments>
-<status endtime="20181216 14:52:20.828" starttime="20181216 14:52:15.594" status="PASS"></status>
+<status endtime="20181216 16:39:16.241" starttime="20181216 16:39:10.475" status="PASS"></status>
 </kw>
 <kw library="keywords.RobotGUIKeywords" name="Validate Element Presence">
 <arguments>
 <arg>TransactionResults.Title</arg>
 </arguments>
-<msg level="FAIL" timestamp="20181216 14:52:51.417">expected:&lt;true&gt; but was:&lt;false&gt;</msg>
-<status endtime="20181216 14:52:51.419" starttime="20181216 14:52:20.831" status="FAIL"></status>
+<msg level="FAIL" timestamp="20181216 16:39:47.170">expected:&lt;true&gt; but was:&lt;false&gt;</msg>
+<status endtime="20181216 16:39:47.173" starttime="20181216 16:39:16.245" status="FAIL"></status>
 </kw>
 <doc>Demo test to order a magic mouse work flow, negative test cases, email is not typed in</doc>
-<status critical="yes" endtime="20181216 14:52:51.424" starttime="20181216 14:51:53.795" status="FAIL">expected:&lt;true&gt; but was:&lt;false&gt;</status>
+<status critical="yes" endtime="20181216 16:39:47.176" starttime="20181216 16:38:53.794" status="FAIL">expected:&lt;true&gt; but was:&lt;false&gt;</status>
 </test>
 <doc>Demo to use robotframework with selenium for keyword-driven testing</doc>
-<status endtime="20181216 14:52:51.438" starttime="20181216 14:51:10.619" status="FAIL"></status>
+<status endtime="20181216 16:39:47.189" starttime="20181216 16:38:23.848" status="FAIL"></status>
 </suite>
-<status endtime="20181216 14:52:51.480" starttime="20181216 14:51:10.108" status="FAIL"></status>
+<status endtime="20181216 16:39:47.218" starttime="20181216 16:38:23.389" status="FAIL"></status>
 </suite>
 <statistics>
 <total>
