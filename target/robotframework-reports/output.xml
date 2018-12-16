@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_05)" generated="20181215 23:20:41.477">
+<suite source="C:\Users\Yuting\workspace\demo\testcases\run" name="Run" id="s1">
+<suite source="C:\Users\Yuting\workspace\demo\testcases\run\demo.robot" name="Demo" id="s1-s1">
+<test name="ORDER MAGIC MOUSE" id="s1-s1-t1">
+<kw name="Init">
+<msg level="FAIL" timestamp="20181215 23:20:42.112">No keyword with name 'Init' found.</msg>
+<status endtime="20181215 23:20:42.115" starttime="20181215 23:20:42.111" status="FAIL"></status>
+</kw>
+<doc>Demo test to order a magic mouse work flow</doc>
+<status critical="yes" endtime="20181215 23:20:42.120" starttime="20181215 23:20:42.080" status="FAIL">No keyword with name 'Init' found.</status>
+</test>
+<doc>Demo to use robotframework with selenium for keyword-driven testing</doc>
+<status endtime="20181215 23:20:42.128" starttime="20181215 23:20:42.007" status="FAIL"></status>
+</suite>
+<status endtime="20181215 23:20:42.141" starttime="20181215 23:20:41.506" status="FAIL"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" name="Run" id="s1">Run</stat>
+<stat pass="0" fail="1" name="Demo" id="s1-s1">Run.Demo</stat>
+</suite>
+</statistics>
+<errors>
+<msg level="ERROR" timestamp="20181215 23:20:42.065">Error in file 'C:\Users\Yuting\workspace\demo\testcases\run\demo.robot': Importing test library 'keywords.RobotGUIKeywords' failed: ImportError: No module named keywords
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Yuting\.m2\repository\org\robotframework\robotframework\3.0.2\Lib
+  C:\Users\Yuting\.m2\repository\org\robotframework\robotframework\3.0.2\robotframework-3.0.2.jar\Lib
+  __classpath__
+  __pyclasspath__/
+CLASSPATH:
+  C:\Users\Yuting\opt\apache-maven-3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar</msg>
+</errors>
+</robot>
