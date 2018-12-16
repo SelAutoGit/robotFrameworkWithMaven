@@ -1,5 +1,65 @@
-Pre-requirements:
+Github repo: https://github.com/SelAutoGit/robotFrameworkWithMaven.git
+master branch: base branch which working for robotframe work maven plugin version
+feature/mavenplugin: branch for maven plugin version which is for continuesly working for improvsments
+feature/standalone: branch for standalone version for better CI/CD pipelines
+
+Pre-Requirements:
     Java 1.8
     Maven 3.5/3.6
     git
-    Intellij
+    public github access
+    Intellij(optional)
+
+Environment Variables has to be set up correctly:
+    JAVA_HOME
+    MAVEN_HOME
+    GIT_HOME
+    set PATH=%PATH%;%JAVA_HOME%\bin;%MAVEN_HOME%\bin;%GIT_HOME%\bin;
+    (Linux) export PATH=$PATH:$JAVA_HOME\bin:$MAVEN_HOME\bin;$GIT_HOME\bin;
+
+Notes: plz check all env variables using echo to make sure it is all set, otherwise, it won't work
+    java -v
+    mvn --version
+    git --version
+
+Notes:
+    For company use which under proxy server:
+        1. Maven settings.xml should set up properly
+        2. Github public access might not be avaliable, plz download the zip format from github
+
+How-to:
+    Run the test cases:
+        1. git clone https://github.com/SelAutoGit/robotFrameworkWithMaven.git
+        2. git checkout feature/mavenplugin
+        Notes: if no public github access, plz switch to feature/mavenplugin branch then download zip file
+        3. go to the project folder using either command line, Intellij terminal window, or the project paths in Linux
+        4. run command:
+        mvn compiler:compile robotframework:run -Dlog4j2.configurationFile=<your project folder path (working dir)>\conf\log4j2.xml
+        Notes: plz replace the working dir by your self, for windows, only absolute path working fine
+        5. after running. plz check test results, the default folder should be under <project working dir>/target/robotfreamwork-repots folder, you can either check log.html or report.html
+
+    Developing test cases:
+        1. Test caes location is under <project working Dir>/testcases/run (This location can be changed in pom.xml property "testCasesDirectory")
+        2. this is demo.robot as sample test suite, it includs 2 test cases, one is for valid flow of ordering magic mouse, another one is for negative test
+        3. Object repository is saved in <project working dir>/objectRepo, it is using properties file to save web elements xpath information, if there is any new elements plz add them in the repo
+        4. the test case format using psv format and the standard format and how to write robot test, plz refer to http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html
+        5. The test results going to <project working dir>/target/robotfreamwork-repots
+
+     Jenkins (using maven plugin may not really fit CI/CD pipeline):
+        1. set input parameter if needed
+        2. set git plugin by using correct repo and path
+        3. Jenkins plugin for maven and github has to be installed
+        4. using maven plug in, put in goals and options as: compiler:compile robotframework:run -Dlog4j2.configurationFile=<put your path here>
+        5. set us post actions with email sent for html testing results
+        6. (optional) if the robotframework jenkins plugin installed, then the test results with nice picture would be posted
+
+To-Do (bc of tight deadline, there are lots of features still not available and has to be improved):
+    1. Multiple driver supports - current version only support Chrome and only for Chrome version 70-72 by using ChromeDriver 2.45
+    2. RemoteWebDriver version - current version only working for local execution, for more effectiveness and scalability, it has to be run by using Seleium Hub
+    3. More interfaces and classes - WebTable, Frame, etc. are commonly used for web applications, the framework should have classes to handles them effectively
+    4. Standalone execution package - Standalone package should be well packaged with all conf, repo, bin, this will help for CI/CD pipelines
+    5. Assembly plug in - Assemply descriptor is under developing, it has to be set up for standalone package
+
+Futures re-search:
+    How does Selenium hub to handle and distribute 3rd party dependencies
+    running slenium on linux with sand box verion of Browser can give 100% confidence?
