@@ -21,11 +21,11 @@ ORDER MAGIC MOUSE
     Type In     Checkout.Final.LastName     Doe
     Type In     Checkout.Final.Address      1 main street
     Type In     Checkout.Final.City     Toronto
-    Select      Checkout.Final.Country      Canada
     Type In     Checkout.Final.PostCode     m1m1m1
     Type In     Checkout.Final.Phone        1234567890
-    Click       Checkout.Final.SameAs
-    Click       Checkout.Final.Purchase
+    Select      Checkout.Final.Country      Canada
+    Validate Element Presence       Checkout.Final.Purchase
+    Click     Checkout.Final.Purchase
     Validate Element Presence       TransactionResults.Title
     Validate Element Text       TransactionResults.Title        Transaction Results
     Validate Element Text       TransactionResults.Name     Magic Mouse

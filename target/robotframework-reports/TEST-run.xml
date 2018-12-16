@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite failures="1" skip="0" tests="1" name="Run" errors="0">
-<testcase classname="Run.Demo" name="ORDER MAGIC MOUSE" time="59">
-<failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="AssertionError"></failure>
+<testcase classname="Run.Demo" name="ORDER MAGIC MOUSE" time="0">
+<failure message="No keyword with name 'Init' found." type="AssertionError"></failure>
 </testcase>
 </testsuite>
