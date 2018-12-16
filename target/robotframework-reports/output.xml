@@ -1,42 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_05)" generated="20181215 23:20:41.477">
+<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_05)" generated="20181215 23:26:27.868">
 <suite source="C:\Users\Yuting\workspace\demo\testcases\run" name="Run" id="s1">
 <suite source="C:\Users\Yuting\workspace\demo\testcases\run\demo.robot" name="Demo" id="s1-s1">
 <test name="ORDER MAGIC MOUSE" id="s1-s1-t1">
-<kw name="Init">
-<msg level="FAIL" timestamp="20181215 23:20:42.112">No keyword with name 'Init' found.</msg>
-<status endtime="20181215 23:20:42.115" starttime="20181215 23:20:42.111" status="FAIL"></status>
+<kw library="keywords.RobotGUIKeywords" name="Init">
+<msg level="INFO" timestamp="20181215 23:26:34.373">Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 8367
+Only local connections are allowed.
+Dec 15, 2018 11:26:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS</msg>
+<status endtime="20181215 23:26:34.380" starttime="20181215 23:26:29.817" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Open">
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<status endtime="20181215 23:26:38.409" starttime="20181215 23:26:34.384" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Find">
+<arguments>
+<arg>HomePage.ProductCategory</arg>
+</arguments>
+<status endtime="20181215 23:26:38.506" starttime="20181215 23:26:38.412" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Move To Element">
+<arguments>
+<arg>HomePage.ProductCategory</arg>
+</arguments>
+<status endtime="20181215 23:26:38.621" starttime="20181215 23:26:38.508" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Click">
+<arguments>
+<arg>ProductCategory.Accessories</arg>
+</arguments>
+<status endtime="20181215 23:26:42.044" starttime="20181215 23:26:38.624" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Click">
+<arguments>
+<arg>Accessories.Button.AddtoCart</arg>
+</arguments>
+<status endtime="20181215 23:26:42.192" starttime="20181215 23:26:42.047" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Click">
+<arguments>
+<arg>Accessories.Link.Checkout</arg>
+</arguments>
+<status endtime="20181215 23:26:45.318" starttime="20181215 23:26:42.196" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Click">
+<arguments>
+<arg>Checkout.Link.Continue</arg>
+</arguments>
+<status endtime="20181215 23:26:45.507" starttime="20181215 23:26:45.322" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Type In">
+<arguments>
+<arg>Checkout.Fianl.Email</arg>
+<arg>joe@gmail.com</arg>
+</arguments>
+<status endtime="20181215 23:26:46.608" starttime="20181215 23:26:45.511" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Type In">
+<arguments>
+<arg>Checkout.Final.FirstName</arg>
+<arg>John</arg>
+</arguments>
+<status endtime="20181215 23:26:46.919" starttime="20181215 23:26:46.612" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Type In">
+<arguments>
+<arg>Checkout.Final.LastName</arg>
+<arg>Doe</arg>
+</arguments>
+<status endtime="20181215 23:26:47.157" starttime="20181215 23:26:46.922" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Type In">
+<arguments>
+<arg>Checkout.Final.Address</arg>
+<arg>1 main street</arg>
+</arguments>
+<status endtime="20181215 23:26:47.440" starttime="20181215 23:26:47.160" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Type In">
+<arguments>
+<arg>Checkout.Final.City</arg>
+<arg>Toronto</arg>
+</arguments>
+<status endtime="20181215 23:26:47.685" starttime="20181215 23:26:47.443" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Select">
+<arguments>
+<arg>Checkout.Final.Country</arg>
+<arg>Canada</arg>
+</arguments>
+<status endtime="20181215 23:26:47.835" starttime="20181215 23:26:47.687" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Type In">
+<arguments>
+<arg>Checkout.Final.PostCode</arg>
+<arg>m1m1m1</arg>
+</arguments>
+<status endtime="20181215 23:26:48.084" starttime="20181215 23:26:47.838" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Type In">
+<arguments>
+<arg>Checkout.Final.Phone</arg>
+<arg>1234567890</arg>
+</arguments>
+<status endtime="20181215 23:26:48.342" starttime="20181215 23:26:48.086" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Click">
+<arguments>
+<arg>Checkout.Final.SameAs</arg>
+</arguments>
+<status endtime="20181215 23:26:48.571" starttime="20181215 23:26:48.345" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Click">
+<arguments>
+<arg>Checkout.Final.Purchase</arg>
+</arguments>
+<status endtime="20181215 23:26:57.713" starttime="20181215 23:26:48.575" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Validate Element Presence">
+<arguments>
+<arg>TransactionResults.Title</arg>
+</arguments>
+<status endtime="20181215 23:26:57.751" starttime="20181215 23:26:57.715" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Validate Element Text">
+<arguments>
+<arg>TransactionResults.Title</arg>
+<arg>Transaction Results</arg>
+</arguments>
+<status endtime="20181215 23:26:57.799" starttime="20181215 23:26:57.753" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Validate Element Text">
+<arguments>
+<arg>TransactionResults.Name</arg>
+<arg>Magic Mouse</arg>
+</arguments>
+<status endtime="20181215 23:26:57.858" starttime="20181215 23:26:57.801" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Validate Element Text">
+<arguments>
+<arg>TransactionResults.Price</arg>
+<arg>$150.00</arg>
+</arguments>
+<status endtime="20181215 23:26:57.904" starttime="20181215 23:26:57.860" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Validate Element Text">
+<arguments>
+<arg>TransactionResults.Quantity</arg>
+<arg>1</arg>
+</arguments>
+<status endtime="20181215 23:26:57.953" starttime="20181215 23:26:57.906" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Validate Element Text">
+<arguments>
+<arg>TransactionResults.ItemTotal</arg>
+<arg>$150.00</arg>
+</arguments>
+<status endtime="20181215 23:26:58.004" starttime="20181215 23:26:57.955" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Close">
+<status endtime="20181215 23:26:58.104" starttime="20181215 23:26:58.005" status="PASS"></status>
 </kw>
 <doc>Demo test to order a magic mouse work flow</doc>
-<status critical="yes" endtime="20181215 23:20:42.120" starttime="20181215 23:20:42.080" status="FAIL">No keyword with name 'Init' found.</status>
+<status critical="yes" endtime="20181215 23:26:58.110" starttime="20181215 23:26:29.806" status="PASS"></status>
 </test>
 <doc>Demo to use robotframework with selenium for keyword-driven testing</doc>
-<status endtime="20181215 23:20:42.128" starttime="20181215 23:20:42.007" status="FAIL"></status>
+<status endtime="20181215 23:26:58.137" starttime="20181215 23:26:28.425" status="PASS"></status>
 </suite>
-<status endtime="20181215 23:20:42.141" starttime="20181215 23:20:41.506" status="FAIL"></status>
+<status endtime="20181215 23:26:58.212" starttime="20181215 23:26:27.896" status="PASS"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" name="Run" id="s1">Run</stat>
-<stat pass="0" fail="1" name="Demo" id="s1-s1">Run.Demo</stat>
+<stat pass="1" fail="0" name="Run" id="s1">Run</stat>
+<stat pass="1" fail="0" name="Demo" id="s1-s1">Run.Demo</stat>
 </suite>
 </statistics>
 <errors>
-<msg level="ERROR" timestamp="20181215 23:20:42.065">Error in file 'C:\Users\Yuting\workspace\demo\testcases\run\demo.robot': Importing test library 'keywords.RobotGUIKeywords' failed: ImportError: No module named keywords
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  C:\Users\Yuting\.m2\repository\org\robotframework\robotframework\3.0.2\Lib
-  C:\Users\Yuting\.m2\repository\org\robotframework\robotframework\3.0.2\robotframework-3.0.2.jar\Lib
-  __classpath__
-  __pyclasspath__/
-CLASSPATH:
-  C:\Users\Yuting\opt\apache-maven-3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar</msg>
 </errors>
 </robot>
