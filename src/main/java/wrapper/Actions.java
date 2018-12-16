@@ -13,4 +13,6 @@ public interface Actions {
     public List<WebElement> findElements(String elementName);
     public String getText(WebElement webElement);
     public void moveToElement(String elementName);
+    public void type(String elementName, String value);
+    public void selectList(String elementName, String option);
 }

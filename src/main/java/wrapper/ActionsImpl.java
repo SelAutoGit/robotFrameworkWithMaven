@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
@@ -55,6 +56,19 @@ public class ActionsImpl implements Actions {
             return null;
         }
 
+    }
+
+    @Override
+    public void type(String elementName, String value){
+        WebElement webElement = findElement(elementName);
+        click(elementName);
+        webElement.sendKeys(value);
+    }
+
+    @Override
+    public void selectList(String elementName, String option) {
+        //click(elementName);
+        new Select(findElement(elementName)).selectByVisibleText(option);
     }
 
     public void moveToElement(String elementName){

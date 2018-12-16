@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_05)" generated="20181215 19:23:51.687">
+<suite source="C:\Users\Yuting\workspace\demo\testcases\run" name="Run" id="s1">
+<suite source="C:\Users\Yuting\workspace\demo\testcases\run\demo.robot" name="Demo" id="s1-s1">
+<test name="ORDER MAGIC MOUSE" id="s1-s1-t1">
+<kw library="keywords.RobotGUIKeywords" name="Init">
+<msg level="INFO" timestamp="20181215 19:23:56.945">Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 38515
+Only local connections are allowed.
+Dec 15, 2018 7:23:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS</msg>
+<status endtime="20181215 19:23:56.950" starttime="20181215 19:23:53.129" status="PASS"></status>
+</kw>
+<kw library="keywords.RobotGUIKeywords" name="Open">
+<arguments>
+<arg>${url}</arg>
+</arguments>

@@ -16,7 +16,9 @@ public class PageActionsImpl implements PageActions {
         try {
             logger.info("The page timeout is " + pageLoadTime);
             driver.manage().timeouts().pageLoadTimeout(pageLoadTime, SECONDS);
+            driver.manage().window().maximize();
             driver.get(url);
+
         } catch (Exception e){
             logger.error("There is prob to open page " + url);
         }
@@ -26,5 +28,9 @@ public class PageActionsImpl implements PageActions {
     public void setPageTimeOut(int time){
         this.pageLoadTime= time;
         logger.info("The page timeout time is setting to " + time);
+    }
+
+    public void close (){
+        driver.close();
     }
 }
