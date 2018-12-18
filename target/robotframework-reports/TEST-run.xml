@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite failures="0" skip="0" tests="1" name="Run" errors="0">
-<testcase classname="Run.Demo" name="ORDER MAGIC MOUSE" time="28">
+<testsuite failures="1" skip="0" tests="2" name="Run" errors="0">
+<testcase classname="Run.Demo" name="ORDER MAGIC MOUSE" time="29">
+</testcase>
+<testcase classname="Run.Demo" name="ORDER MAGIC MOUSE Negative Test case" time="53">
+<failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="AssertionError"></failure>
 </testcase>
 </testsuite>
