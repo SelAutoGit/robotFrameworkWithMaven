@@ -62,9 +62,48 @@ http://maven.apache.org/ASSEMBLY/2.0.0 ">
 
         <fileSet>
 
-            <directory>input</directory>
+            <directory>testcases</directory>
 
-            <outputDirectory>input</outputDirectory>
+            <outputDirectory>testcases</outputDirectory>
+
+            <includes>
+
+                <include>*</include>
+
+            </includes>
+
+        </fileSet>
+        <fileSet>
+
+            <directory>driver</directory>
+
+            <outputDirectory>driver</outputDirectory>
+
+            <includes>
+
+                <include>*</include>
+
+            </includes>
+
+        </fileSet>
+        <fileSet>
+
+            <directory>docs</directory>
+
+            <outputDirectory>docs</outputDirectory>
+
+            <includes>
+
+                <include>*</include>
+
+            </includes>
+
+        </fileSet>
+        <fileSet>
+
+            <directory>objectRepo</directory>
+
+            <outputDirectory>objectRepo</outputDirectory>
 
             <includes>
 
