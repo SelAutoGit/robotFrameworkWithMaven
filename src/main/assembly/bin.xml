@@ -9,7 +9,6 @@ http://maven.apache.org/ASSEMBLY/2.0.0 ">
 
 
     <formats>
-
         <format>dir</format>
 
     </formats>
@@ -143,18 +142,18 @@ http://maven.apache.org/ASSEMBLY/2.0.0 ">
 
     </fileSets>
 
-    <!-- <dependencySets>
+     <dependencySets>
 
           <dependencySet>
 
-              <outputDirectory>lib</outputDirectory>
+              <outputDirectory>/lib</outputDirectory>
 
               <unpack>false</unpack>
 
-              <useTransitiveDependencies>true</useTransitiveDependencies>
+              <useTransitiveDependencies>false</useTransitiveDependencies>
 
           </dependencySet>
 
-      </dependencySets>-->
+      </dependencySets>
 
 </assembly>

@@ -5,7 +5,8 @@
     <artifactId>demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
+
     <properties>
         <log4j.version>2.8.2</log4j.version>
         <restassured.version>3.0.3</restassured.version>
@@ -125,6 +126,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.0.2</version>
+
                 <configuration>
                     <archive>
                         <manifest>
@@ -132,7 +134,7 @@
                             <mainClass>Main</mainClass>
                         </manifest>
                     </archive>
-                    <outputDirectory>${basedir}/target/${project.build.finalName}/lib</outputDirectory>
+                    <outputDirectory>${basedir}/target/${project.build.finalName}</outputDirectory>
                 </configuration>
             </plugin>
             <!-- Copy dependencies to lib folder for clean jar-->
@@ -149,9 +151,10 @@
                         </goals>
                         <configuration>
                             <outputDirectory>${basedir}/target/${project.build.finalName}/lib</outputDirectory>
+
                         </configuration>
                     </execution>
-                    <execution>
+                    <!--<execution>
                         <id>copy-dependencies-install</id>
                         <phase>install</phase>
                         <goals>
@@ -160,7 +163,7 @@
                         <configuration>
                             <outputDirectory>${basedir}/target/${project.build.finalName}/lib</outputDirectory>
                         </configuration>
-                    </execution>
+                    </execution>-->
                 </executions>
             </plugin>
             <!-- Generate a fat jar -->
@@ -192,16 +195,16 @@
                             <goal>single</goal>
                         </goals>
                     </execution>
-                    <execution>
+                   <!-- <execution>
                         <id>installStep</id>
                         <phase>install</phase>
                         <goals>
                             <goal>single</goal>
                         </goals>
-                    </execution>
+                    </execution>-->
                 </executions>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.robotframework</groupId>
                 <artifactId>robotframework-maven-plugin</artifactId>
                 <version>1.4.7</version>
@@ -218,7 +221,7 @@
                     <libdoc/>
                     <testdoc/>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
 
     </build>
